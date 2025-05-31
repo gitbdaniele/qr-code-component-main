@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+    /* clr */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-slate-300: hsl(212, 45%, 89%);
+    --clr-slate-500: hsl(216, 15%, 48%);
+    --clr-slate-900: hsl(218, 44%, 22%);
+
+    /* ff */
+    --ff-main: 'Outfit';
+
+    /* fs */
+    --fs-heading: 1.4rem;
+    --fs-main: 1rem;
+
+    /* fw */
+    --fw-main: 400;
+    --fw-headings: 700;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--clr-slate-900);
+    font-family: var(--ff-main);
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-headings);
+    margin-top: 1.55rem;
+    line-height: 1.6rem;
+}
+
+p {
+    color: var(--clr-slate-500);
+    font-family: var(--ff-main);
+    font-size: var(--fs-main);
+    font-weight: var(--ff-main);
+    margin: 1.1rem 0 1.6rem 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.75rem;
+}
+
+body {
+    background-color: var(--clr-slate-300);
+}
+ /* text styling */
+.text {
+    text-align: center;
+    margin: 0 0.8rem;
+}
+
+/* layout styling */
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--clr-white);
+    border-radius: 1.4rem;
+    padding: 1rem;
+    margin: 15rem 0;
+    max-width: 20rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
